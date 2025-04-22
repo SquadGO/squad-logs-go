@@ -15,21 +15,21 @@ import (
   "fmt"
   logs "github.com/SquadGO/squad-logs-go"
   "github.com/SquadGO/squad-logs-go/logsEvents"
-	"github.com/SquadGO/squad-logs-go/logsTypes"
+  "github.com/SquadGO/squad-logs-go/logsTypes"
 )
 
 func main() {
   fr, err := logs.NewFTPReader(
-		logs.FTPReaderConfig{
-			Host:               "127.0.0.1:22",
-			Username:           "root",
-			Password:           "password",
-			LogPath:            "/server/SquadGame.log",
-			AdminsPath:         "/server/Admins.cfg", // TODO
-			AutoReconnect:      true,
-			AutoReconnectDelay: 5,
-		},
-	)
+    logs.FTPReaderConfig{
+      Host:               "127.0.0.1:22",
+      Username:           "root",
+      Password:           "password",
+      LogPath:            "/server/SquadGame.log",
+      AdminsPath:         "/server/Admins.cfg", // TODO
+      AutoReconnect:      true,
+      AutoReconnectDelay: 5,
+    },
+  )
 
   if err != nil {
     fmt.Println("[LOGS] Error: ", err)
