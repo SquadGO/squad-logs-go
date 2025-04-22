@@ -47,8 +47,8 @@ func main() {
   })
 
   fr.Emitter.On(logsEvents.RECONNECTING, func(i interface{}) {
-		fmt.Println("[LOGS] Reconnecting")
-	})
+    fmt.Println("[LOGS] Reconnecting")
+  })
 
   fr.Emitter.On(logsEvents.CLOSE, func(_ interface{}) {
     fmt.Println("[LOGS] Connection closed")
@@ -58,11 +58,11 @@ func main() {
     fmt.Println("[LOGS] Error: ", err)
   })
 
-	fr.Emitter.On(logsEvents.PLAYER_DAMAGED, func(i interface{}) {
-		if data, ok := i.(logsTypes.PlayerDamaged); ok {
-			fmt.Println(data)
-		}
-	})
+  fr.Emitter.On(logsEvents.PLAYER_DAMAGED, func(i interface{}) {
+    if data, ok := i.(logsTypes.PlayerDamaged); ok {
+      fmt.Println(data)
+    }
+  })
 
   // Use to prevent the program from ending
   select {}
