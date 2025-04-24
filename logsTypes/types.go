@@ -153,7 +153,7 @@ type RoundTickets struct {
 	Subfaction string
 	Faction    string
 	Action     string
-	Tickets    int64
+	Tickets    int
 	Layer      string
 	Level      string
 }

@@ -19,7 +19,7 @@ func vehicleDamaged(line string) (event string, data interface{}) {
 	if matches != nil {
 		damage, err := strconv.ParseFloat(strings.TrimSpace(matches[4]), 64)
 		if err != nil {
-			return logsEvents.PLAYER_DAMAGED, nil
+			return logsEvents.VEHICLE_DAMAGED, nil
 		}
 
 		return logsEvents.VEHICLE_DAMAGED, logsTypes.VehicleDamaged{

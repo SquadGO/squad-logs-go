@@ -3,7 +3,6 @@ package parser
 import (
 	"regexp"
 	"strconv"
-	"strings"
 
 	"github.com/SquadGO/squad-logs-go/logsEvents"
 	"github.com/SquadGO/squad-logs-go/logsTypes"
@@ -17,7 +16,7 @@ func roundTickets(line string) (event string, data interface{}) {
 	matches = re.FindStringSubmatch(line)
 
 	if matches != nil {
-		tickets, err := strconv.ParseInt(strings.TrimSpace(matches[7]), 10, 64)
+		tickets, err := strconv.Atoi(matches[7])
 		if err != nil {
 			return logsEvents.ROUND_TICKETS, nil
 		}
