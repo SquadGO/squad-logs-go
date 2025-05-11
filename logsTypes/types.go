@@ -71,7 +71,7 @@ type PlayerDied struct {
 	AttackerController string
 	AttackerEOSID      string
 	AttackerSteamID    string
-	Weapon             string
+	Weapon             string // nullptr or controller
 }
 
 type PlayerDisconnected struct {
