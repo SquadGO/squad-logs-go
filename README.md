@@ -89,6 +89,7 @@ func main() {
 | **PLAYER_REVIVED**      | `PlayerRevived`      |
 | **PLAYER_SUICIDE**      | `PlayerSuicide`      |
 | **PLAYER_WOUNDED**      | `PlayerWounded`      |
+| **PLAYER_QUEUED**       | `PlayerQueued`       |
 | **ROUND_WINNER**        | `RoundWinner`        |
 | **ROUND_ENDED**         | `RoundEnded`         |
 | **ROUND_TICKETS**       | `RoundTickets`       |

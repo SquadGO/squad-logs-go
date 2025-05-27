@@ -39,13 +39,6 @@ type NewGame struct {
 	LayerClassname string
 }
 
-type PlayerQueued struct {
-    Raw     string
-    Time    string
-    ChainID string
-    EosID   string
-}
-
 type PlayerConnected struct {
 	Raw              string
 	Time             string
@@ -138,6 +131,13 @@ type PlayerWounded struct {
 	AttackerEOSID            string
 	AttackerSteamID          string
 	Weapon                   string
+}
+
+type PlayerQueued struct {
+	Raw     string
+	Time    string
+	ChainID string
+	EosID   string
 }
 
 type RoundEnded struct {
