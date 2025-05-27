@@ -39,6 +39,13 @@ type NewGame struct {
 	LayerClassname string
 }
 
+type PlayerQueued struct {
+    Raw     string
+    Time    string
+    ChainID string
+    EosID   string
+}
+
 type PlayerConnected struct {
 	Raw              string
 	Time             string
