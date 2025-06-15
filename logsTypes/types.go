@@ -141,15 +141,9 @@ type PlayerQueued struct {
 }
 
 type RoundEnded struct {
-	Raw                      string
-	Time                     string
-	ChainID                  string
-	VictimName               string
-	Damage                   float64
-	AttackerPlayerController string
-	AttackerEOSID            string
-	AttackerSteamID          string
-	Weapon                   string
+	Raw     string
+	Time    string
+	ChainID string
 }
 
 type RoundTickets struct {
