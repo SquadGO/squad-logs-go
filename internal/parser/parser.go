@@ -26,6 +26,8 @@ var parsers = []Parser{
 	serverTickrate,
 	squadCreated,
 	vehicleDamaged,
+	uchannelClose,
+	beaconHandshake,
 }
 
 func LogParser(line string, emitter eventEmitter.EventEmitter) {

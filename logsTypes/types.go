@@ -198,3 +198,25 @@ type VehicleDamaged struct {
 	AttackerSteamID string
 	HealthRemaining string
 }
+
+type UChannelClose struct {
+	Raw        string
+	Time       string
+	ChainID    string
+	ChIndex    int
+	Closing    int
+	RemoteAddr string
+	Name       string
+	Driver     string
+	IsServer   bool
+	PC         string
+	Owner      string
+	UniqueId   string
+}
+
+type BeaconHandshake struct {
+	Raw     string
+	Time    string
+	ChainID string
+	Client  string
+}
