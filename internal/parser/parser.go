@@ -26,7 +26,6 @@ var parsers = []Parser{
 	serverTickrate,
 	squadCreated,
 	vehicleDamaged,
-	uchannelClose,
 	beaconHandshake,
 }
 
