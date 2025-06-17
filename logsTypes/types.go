@@ -198,3 +198,10 @@ type VehicleDamaged struct {
 	AttackerSteamID string
 	HealthRemaining string
 }
+
+type BeaconHandshake struct {
+	Raw     string
+	Time    string
+	ChainID string
+	Client  string
+}
